@@ -1,0 +1,81 @@
+
+(rules PCB ASVCA1
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 2280)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.4)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    +12V GND "-12V" Iout3 "Net-(C5-Pad2)" Iout2 "Net-(C6-Pad2)" Iout1
+    "Net-(C7-Pad2)" PosRef NegRef "Net-(R5-Pad2)" INPUT3a "Net-(R6-Pad2)" INPUT3b "Net-(R7-Pad2)"
+    CVIN3 in3a "Net-(R9-Pad1)" in3b "Net-(R10-Pad1)" VCntrl3 "Net-(R11-Pad1)" OUTPUT3
+    "Net-(R16-Pad2)" INPUT2 "Net-(R17-Pad2)" CVIN2 in2 "Net-(R19-Pad1)" VCntrl2 "Net-(R20-Pad1)"
+    OUTPUT2 "Net-(R24-Pad2)" INPUT1 "Net-(R25-Pad2)" in1 "Net-(R27-Pad1)" VCntrl1 "Net-(R28-Pad1)"
+    OUTPUT1 "to_CVMix1" "to_CVMix2" "to_CVMix3" "Net-(U3-Pad13)" "Net-(U4-Pad13)" CVIN1
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

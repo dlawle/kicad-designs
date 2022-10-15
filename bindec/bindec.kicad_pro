@@ -366,7 +366,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "specctra_dsn": "",
+      "specctra_dsn": "bindec.dsn",
       "step": "3U_8HP_Blank.step",
       "vrml": ""
     },
