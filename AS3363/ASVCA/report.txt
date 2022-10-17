@@ -1,0 +1,11 @@
+Plotted to 'C:\Users\daniel\Desktop\kicad-designs\AS3363\ASVCA\ASVCA-F_Cu.gbr'.
+Plotted to 'C:\Users\daniel\Desktop\kicad-designs\AS3363\ASVCA\ASVCA-B_Cu.gbr'.
+Plotted to 'C:\Users\daniel\Desktop\kicad-designs\AS3363\ASVCA\ASVCA-F_Paste.gbr'.
+Plotted to 'C:\Users\daniel\Desktop\kicad-designs\AS3363\ASVCA\ASVCA-B_Paste.gbr'.
+Plotted to 'C:\Users\daniel\Desktop\kicad-designs\AS3363\ASVCA\ASVCA-F_Silkscreen.gbr'.
+Plotted to 'C:\Users\daniel\Desktop\kicad-designs\AS3363\ASVCA\ASVCA-B_Silkscreen.gbr'.
+Plotted to 'C:\Users\daniel\Desktop\kicad-designs\AS3363\ASVCA\ASVCA-F_Mask.gbr'.
+Plotted to 'C:\Users\daniel\Desktop\kicad-designs\AS3363\ASVCA\ASVCA-B_Mask.gbr'.
+Plotted to 'C:\Users\daniel\Desktop\kicad-designs\AS3363\ASVCA\ASVCA-Edge_Cuts.gbr'.
+Created Gerber job file 'C:\Users\daniel\Desktop\kicad-designs\AS3363\ASVCA\ASVCA-job.gbrjob'.
+Info: Done.
